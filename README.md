@@ -8,6 +8,8 @@ As prerequisites to run this exoplanet-graph producing docker container are the 
 
 2) And having *Docker* installed.
 
+For users on *Windows*, maybe you need to install WSL2, but Powershell should be fine as well as using a *bash* shell.
+
 For now, these are the only needed software tools that I am aware of. Maybe it won't run on M1-based Macs, but this could be addressed later on.
 
 In order to produce the plot, you will net to do the following: open a terminal session and run:
@@ -21,13 +23,13 @@ The next step will be to maneuver into the **docker** folder:
 
 and then you will run the following command:
 
-3) docker build -t whateveryouwanttocalltheimage .
+3) docker build -t yourimage .
 
-After some time, it (hopefully) will say something like: whateveryouwanttocalltheimage:latest sucessfully build.
+After some time, it (hopefully) will say something like: yourimage:latest sucessfully build.
 
 Now finally, a last command will be needed to generate the graph in the Docker container and copy it to you local machine to marvel at it. This will be done using the following command:
 
-4) docker run --rm --name whateveryouwanttocalltheimage_container -v /your/path/to/a/folder/to/store/graph:/output/ whateveryouwanttocalltheimage
+4) docker run --rm --name yourimage_container -v /your/path/to/a/folder/to/store/graph:/output/ yourimage
 
 This command runs the desired commands inside the Dockerfile. It first it uses the rocker/r-ver:4.1.2 as baseline image, then installs devtools and ggplot2 as inital packages into the r-session.
 Next, devtools is used to download the package which I build to generate a simpler version of an exoplanet dataset. This package thus allows for bit-by-bit digestion of information on exoplanets, and is used to generate a neat plot. After that, two directories are created:
