@@ -1,5 +1,3 @@
-# Exoplanet_docker
-
 # Exoplanet graph - A Docker project
 
 This Rmarkdown file is a guide to producing a graph highlighting a very intersting aspect of exoplanet discoveries, which I willnot share in advance, but at hich one you might marvel at when you see it. Maybe you won't find it interesting, then maybe you are not really into it. At least, the graph will be generated using the beautiful r-package called **ggplot2**.
