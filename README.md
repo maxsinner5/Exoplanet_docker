@@ -12,7 +12,7 @@ For now, these are the only needed software tools that I am aware of. Maybe it w
 
 In order to produce the plot, you will net to do the following: open a terminal session and run:
 
-1) git clone .........
+1) git clone git@github.com:maxsinner5/Exoplanet_docker.git
 
 This step downloads the needed resources to build the Docker image.
 The next step will be to maneuver into the **docker** folder:
