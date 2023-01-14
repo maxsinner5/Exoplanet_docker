@@ -16,5 +16,5 @@ exoplanet_plot <- ggplot(exoplanets) +
 
 
 
-ggsave("exoplanet_plot.pdf", exoplanet_plot, width = 10, height = 8, dpi = 100)
+ggsave("/output/exoplanet_plot.pdf", exoplanet_plot, width = 10, height = 8, dpi = 100)
 
